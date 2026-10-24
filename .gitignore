@@ -1,0 +1,5 @@
+# Workbench output and caches
+*.pak
+.cache/
+Data/
+resourceDatabase.rdb
