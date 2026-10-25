@@ -9,11 +9,11 @@ Freedom Fighters (Workshop `CAFEBEEFF0CACC1A`) is design inspiration only: its l
 so no FF file, string or asset goes in this repo.
 
 ## First-time setup (Windows, Arma Reforger Tools)
-1. Clone this repo on the Windows PC.
-2. Workbench → Create New Project → name `AntistasiReforger`, directory = this repo. That writes `addon.gproj`
-   with its GUID and the ArmaReforger dependency; commit it.
+1. `git clone https://github.com/mirrorsedgepro-stack/AR-Antistasi-Ultimate`
+2. Workbench launcher → **Add Existing** → pick `addon.gproj` in the clone (it is committed; don't create a new project).
 3. Open the Script Editor and compile (F7). `Scripts/Game/AS/AS_Boot.c` must compile clean.
 4. Publish → Workshop, visibility **Unlisted**. Note the mod ID and add it to `~/ReforgerAS/config/server.json` `mods[]`.
+5. If Workbench rewrites `addon.gproj` (e.g. adds settings on save), commit and push that.
 
 ## Smoke test
 The server log (`~/ReforgerAS/profiles/logs/*/console.log`) should print `[AS] Antistasi-Reforger loaded`
